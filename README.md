@@ -1,4 +1,4 @@
-# FitnessTracker
+# Fitness Tracker
 
 Application used to track a fitness regimen.
 User can track their progress over time and add new exercsies as they progress.
