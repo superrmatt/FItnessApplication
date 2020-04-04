@@ -2,7 +2,7 @@ let mongoose = require("mongoose"),
  db = require("../models"),
  password = require("./password");
 
-mongoose.connect("mongodb://user1:" + password + "@ds145168.mlab.com:45168/heroku_7z7m9f9h", {
+mongoose.connect("mongodb://user1:" + password + "@ds153659.mlab.com:53659/heroku_75bkw2x1", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
