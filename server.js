@@ -1,8 +1,7 @@
 const express = require("express"),
  logger = require("morgan"),
  mongoose = require("mongoose"),
- routes = require("./routes/routes"),
- password = require("./seeders/password");
+ routes = require("./routes/routes");
 
 const PORT = process.env.PORT || 8080;
 
