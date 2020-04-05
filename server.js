@@ -13,9 +13,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-
-var mongodb_URI = process.env.MONGODB_URI || "mongodb://user1:" + password + "@ds153659.mlab.com:53659/heroku_75bkw2x1";
-mongoose.connect(mongodb_URI);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true
+});
 
 app.use(routes);
 
